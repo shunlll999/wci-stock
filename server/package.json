@@ -1,0 +1,16 @@
+{
+  "name": "wci-stock-server",
+  "version": "1.0.0",
+  "description": "Server example stock",
+  "main": "server.js",
+  "author": "wachiii",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
