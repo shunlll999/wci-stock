@@ -32,7 +32,6 @@ export default function Page() {
       ws.send(JSON.stringify({ type: 'setSymbol', symbol }));
     };
     ws.onmessage = (evt) => {
-      console.log('ws message', evt.data);
       try {
         const msg = JSON.parse(evt.data as string);
         // Finnhub: { type:"trade", data:[{ p, s, t, v }, ... ] }

@@ -31,7 +31,7 @@ function ensureFH() {
 
   fh.on("open", () => {
     fhReady = true;
-    console.log("Connected to Finnhub");
+    console.log("Connected to Finnhub and wellcome!");
     // resubscribe symbols after reconnect
     for (const sym of subscribed) {
       fh.send(JSON.stringify({ type: "subscribe", symbol: sym }));
